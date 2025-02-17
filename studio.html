@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERIUS BLACK MUSIC - Prise de Rendez-vous</title>
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('logo.jpg') no-repeat center center fixed;
+            background-size: contain; /* Ajustement pour voir le logo */
+            background-color: #222; /* Couleur de fond si l'image ne charge pas */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        .overlay {
+            background: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .container {
+            position: relative;
+            max-width: 90%;
+            width: 500px;
+            background: rgba(51, 51, 51, 0.9);
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 152, 0, 0.7);
+        }
+        
+        h1, h2 {
+            color: #ff9800;
+        }
+
+        a {
+            color: #ff9800;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info, .services, .payment-info {
+            margin: 20px 0;
+        }
+
+        .service {
+            margin: 10px 0;
+            font-weight: bold;
+            background: #444;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .form-group {
+            margin: 15px 0;
+            text-align: left;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select, textarea, button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #666;
+            background: #444;
+            color: #fff;
+        }
+
+        button {
+            background-color: #ff9800;
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #e68900;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>Bienvenue chez SERIUS BLACK MUSIC</h1>
+        <p>Réservez votre session studio dès maintenant !</p>
+        
+        <div class="contact-info">
+            <h2>Contact</h2>
+            <p><strong>Téléphone:</strong> <a href="tel:+221773975338">+221 77 397 53 38</a></p>
+            <p><strong>Email:</strong> <a href="mailto:bebe.ba07@gmail.com">bebe.ba07@gmail.com</a></p>
+            <p><strong>Adresse:</strong> Perysac, Ziguinchor, près du lycée</p>
+        </div>
+        
+        <div class="services">
+            <h2>Nos Services</h2>
+            <p class="service">🎤 Prise de voix - 15.000F</p>
+            <p class="service">🎙️ Enregistrement live - 30.000F</p>
+            <p class="service">🎚️ Mix et Mastering - 25.000F</p>
+            <p class="service">🎵 Beat 100% M.A.O - 25.000F</p>
+            <p class="service">🎶 Beat 50% M.A.O 50% Live - 40.000F</p>
+        </div>
+        
+        <div class="payment-info">
+            <h2>Modes de paiement</h2>
+            <p><strong>Wave:</strong> +221 77 397 53 38</p>
+            <p><strong>Orange Money:</strong> +221 77 397 53 38</p>
+        </div>
+        
+        <h2>Prendre un Rendez-vous</h2>
+        <form action="mailto:bebe.ba07@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="Nom" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="service">Service souhaité:</label>
+                <select id="service" name="Service" required>
+                    <option value="">Sélectionnez un service</option>
+                    <option value="Prise de voix">Prise de voix - 15.000F</option>
+                    <option value="Enregistrement live">Enregistrement live - 30.000F</option>
+                    <option value="Mix et Mastering">Mix et Mastering - 25.000F</option>
+                    <option value="Beat 100% M.A.O">Beat 100% M.A.O - 25.000F</option>
+                    <option value="Beat 50% M.A.O 50% Live">Beat 50% M.A.O 50% Live - 40.000F</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message (optionnel) :</label>
+                <textarea id="message" name="Message" rows="3"></textarea>
+            </div>
+            <button type="submit">Envoyer la demande</button>
+        </form>
+    </div>
+</body>
+</html>
